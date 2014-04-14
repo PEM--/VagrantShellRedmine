@@ -1,0 +1,8 @@
+production:
+  adapter: mysql2
+  database: redmine_default
+  host: localhost
+  port: 
+  username: redmine
+  password: Redmine
+  encoding: utf8
