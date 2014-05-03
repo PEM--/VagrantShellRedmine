@@ -9,7 +9,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "https://googledrive.com/host/0B83ZToJ3fGtDcVBKLU1HNTR1bXc/ubuntu-13.10-server-amd64_virtualbox.box"
 
   # Configure VM as a real server available on the LAN
-  config.vm.network "private_network", ip: "192.168.50.10"
+  #config.vm.network "private_network", ip: "192.168.50.10"
+  config.vm.network "public_network", ip: "192.168.1.50"
 
   # Set specific VirtualBox settings
   config.vm.provider "virtualbox" do |v|
